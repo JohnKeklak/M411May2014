@@ -1,0 +1,54 @@
+
+
+
+Examples of SQL queries:
+
+INSERT INTO people SET name='Pinkus', age='7';
+
+SELECT * FROM people WHERE name='Pinkus';
+
+
+
+MySQL console:
+
+./mysql    -u    root    -p
+
+On Windows, the mysql.exe program is in C:\wamp\bin\mysql\mysql5.6.12\bin
+
+On OS X, it is in /Applications/MAMP/Library/bin
+
+
+
+SHOW DATABASES;
+
+
+CREATE DATABASE myfirstdatabase;
+
+
+USE myfirstdatabase;
+
+
+
+Grant all permissions for all operations for all tables in the database named myfirstdatabase on the localhost server to user the user named mysqluser:
+
+
+GRANT ALL ON myfirstdatabase.* TO 'mysqluser'@'localhost';
+
+
+
+Set the password for mysqluser:
+
+
+SET PASSWORD FOR 'mysqluser'@'localhost' = PASSWORD('mysqluserpassword');
+
+
+
+
+PHP scripts:
+
+MySQLConnectionCheck.php
+
+MySQLTableCreate.php
+
+MySQLStoreAndRetrieve.php
+
